@@ -59,7 +59,7 @@ let start = document.getElementById("start")
 let select = document.getElementById("difficulty")
 select.addEventListener("change", function(){
     console.log("hai selezionato", this.value)
-    if (this.value == "easy") {
+    if (select.value == "easy") {
         for (let i = 1; i <= 100; i++) {
             start.addEventListener("click", function () {
                 //Console log per stampare i numeri da 1 a 100 in console
@@ -70,7 +70,7 @@ select.addEventListener("change", function(){
                 grid.append(square)
             })
         }
-    }else if (this.value == "medium") {
+    }else if (select.value == "medium") {
         for (let i = 1; i <= 81; i++) {
             start.addEventListener("click", function () {
                 //Console log per stampare i numeri da 1 a 100 in console
@@ -82,7 +82,7 @@ select.addEventListener("change", function(){
                 grid.append(square)
             })
         }
-    }else if (this.value == "hard") {
+    }else if (select.value == "hard") {
         for (let i = 1; i <= 49; i++) {
             start.addEventListener("click", function () {
                 //Console log per stampare i numeri da 1 a 100 in console
