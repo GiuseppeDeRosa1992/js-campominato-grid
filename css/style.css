@@ -34,3 +34,9 @@ header {
 .blue {
     background-color: dodgerblue;
 }
+
+button {
+    padding: 1rem;
+    width: 100%;
+    margin-bottom: 1rem;
+}
