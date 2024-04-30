@@ -31,6 +31,19 @@ header {
     border: 1px solid red;
 }
 
+.square-9 {
+    width: 55.5px;
+    height: 55.5px;
+    border: 1px solid white;
+}
+
+.square-7 {
+    width: 71.4px;
+    height: 71.4px;
+    border: 1px solid yellow;
+}
+
+
 .blue {
     background-color: dodgerblue;
 }

@@ -77,6 +77,7 @@ select.addEventListener("change", function(){
                 console.log(i)
                 //Creo variabile square e gli dico che è uguale alla funziona che mi crea il quadrato e gli do il numero dell'indice del quadrato creato
                 let square = createSquare(i)
+                square.classList.add("square-9")
                 //appendo alla griglia in html square
                 grid.append(square)
             })
@@ -88,6 +89,7 @@ select.addEventListener("change", function(){
                 console.log(i)
                 //Creo variabile square e gli dico che è uguale alla funziona che mi crea il quadrato e gli do il numero dell'indice del quadrato creato
                 let square = createSquare(i)
+                square.classList.add("square-7")
                 //appendo alla griglia in html square
                 grid.append(square)
             })
