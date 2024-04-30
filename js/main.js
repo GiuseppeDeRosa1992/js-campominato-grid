@@ -17,14 +17,20 @@ function createSquare(qualcosa) {
     let quadrato = document.createElement("div")
     //aggiungo una class al div con variabile quadrato
     quadrato.classList.add("square")
-    //aggiungo qualcosa dentro il div e dopo quel qualcosa sarà l'indice del ciclo
-    quadrato.innerText = qualcosa
+
+    // //aggiungo qualcosa dentro il div e dopo quel qualcosa sarà l'indice del ciclo (i numeri sono fissi)
+    // quadrato.innerText = qualcosa
 
     //creo l'evento che quando clicco sul quadrato mi aggiunge la class che su css ha background blue e con toggle quando clicco un quadrato blu mi ritorna con background normale
     quadrato.addEventListener("click", function () {
         quadrato.classList.toggle("blue")
         //consolelog che mi dice che quadrato ho cliccato
         console.log("Ho cliccato", quadrato)
+
+        //BONUS 1 metto il numero solo quando clicco sul quadrato
+        //aggiungo qualcosa dentro il div e dopo quel qualcosa sarà l'indice del ciclo
+        quadrato.innerText = qualcosa
+
     }
     )
     //la funzione mi ritorna quadrato che poi vado a richimare fuori
