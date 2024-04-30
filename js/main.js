@@ -27,7 +27,7 @@ function createSquare(qualcosa) {
         //consolelog che mi dice che quadrato ho cliccato
         console.log("Ho cliccato", quadrato)
 
-/*************BONUS 1 metto il numero solo quando clicco sul quadrato ********************/
+        /*************BONUS 1 metto il numero solo quando clicco sul quadrato ********************/
 
         //aggiungo qualcosa dentro il div e dopo quel qualcosa sarà l'indice del ciclo
         quadrato.innerText = qualcosa
@@ -38,17 +38,59 @@ function createSquare(qualcosa) {
     return quadrato
 }
 
-/* BONUS 2 CREO UN BOTTONE E SOLO QUANDO CLICCO INIZIA IL GIOCO E VEDO LE COSE IN PAGINA */
+// /* BONUS 2 CREO UN BOTTONE E SOLO QUANDO CLICCO INIZIA IL GIOCO E VEDO LE COSE IN PAGINA */
+// //Richiamo il bottone in js
+// let start = document.getElementById("start")
+// // CREO CICLO FOR E FACCIO PARTIRE IL CONTATORE DA 1 E LO FACCUIO FINIRE A 100
+// for (let i = 1; i <= 100; i++) {
+//     start.addEventListener("click", function () {
+//         //Console log per stampare i numeri da 1 a 100 in console
+//         console.log(i)
+//         //Creo variabile square e gli dico che è uguale alla funziona che mi crea il quadrato e gli do il numero dell'indice del quadrato creato
+//         let square = createSquare(i)
+//         //appendo alla griglia in html square
+//         grid.append(square)
+//     })
+// }
+
+/* BONUS 3 CREO UN BOTTONE E SOLO QUANDO CLICCO INIZIA IL GIOCO E VEDO LE COSE IN PAGINA */
 //Richiamo il bottone in js
 let start = document.getElementById("start")
-// CREO CICLO FOR E FACCIO PARTIRE IL CONTATORE DA 1 E LO FACCUIO FINIRE A 100
-for (let i = 1; i <= 100; i++) {
-    start.addEventListener("click", function () {
-        //Console log per stampare i numeri da 1 a 100 in console
-        console.log(i)
-        //Creo variabile square e gli dico che è uguale alla funziona che mi crea il quadrato e gli do il numero dell'indice del quadrato creato
-        let square = createSquare(i)
-        //appendo alla griglia in html square
-        grid.append(square)
-    })
-}
+let select = document.getElementById("difficulty")
+select.addEventListener("change", function(){
+    console.log("hai selezionato", this.value)
+    if (this.value == "easy") {
+        for (let i = 1; i <= 100; i++) {
+            start.addEventListener("click", function () {
+                //Console log per stampare i numeri da 1 a 100 in console
+                console.log(i)
+                //Creo variabile square e gli dico che è uguale alla funziona che mi crea il quadrato e gli do il numero dell'indice del quadrato creato
+                let square = createSquare(i)
+                //appendo alla griglia in html square
+                grid.append(square)
+            })
+        }
+    }else if (this.value == "medium") {
+        for (let i = 1; i <= 81; i++) {
+            start.addEventListener("click", function () {
+                //Console log per stampare i numeri da 1 a 100 in console
+                console.log(i)
+                //Creo variabile square e gli dico che è uguale alla funziona che mi crea il quadrato e gli do il numero dell'indice del quadrato creato
+                let square = createSquare(i)
+                //appendo alla griglia in html square
+                grid.append(square)
+            })
+        }
+    }else if (this.value == "hard") {
+        for (let i = 1; i <= 49; i++) {
+            start.addEventListener("click", function () {
+                //Console log per stampare i numeri da 1 a 100 in console
+                console.log(i)
+                //Creo variabile square e gli dico che è uguale alla funziona che mi crea il quadrato e gli do il numero dell'indice del quadrato creato
+                let square = createSquare(i)
+                //appendo alla griglia in html square
+                grid.append(square)
+            })
+        }
+    }
+})
