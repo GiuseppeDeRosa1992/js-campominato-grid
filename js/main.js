@@ -6,6 +6,11 @@ for (let i = 1; i <= 100; i++) {
     console.log(i)
     let square = document.createElement("div")
     square.classList.add("square")
-    square.innerText= i
+    square.innerText = i
     grid.append(square)
+
+    square.addEventListener("click", function () {
+        square.classList.toggle("blue")
+    }
+    )
 }
