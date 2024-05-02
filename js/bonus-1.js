@@ -23,14 +23,21 @@
 
 //     //creo l'evento che quando clicco sul quadrato mi aggiunge la class che su css ha background blue e con toggle quando clicco un quadrato blu mi ritorna con background normale
 //     quadrato.addEventListener("click", function () {
-//         quadrato.classList.toggle("white")
+        
 //         //consolelog che mi dice che quadrato ho cliccato
 //         console.log("Ho cliccato", quadrato)
 
 // /**********************BONUS 1 metto il numero solo quando clicco sul quadrato ***************************/
-//         //aggiungo qualcosa dentro il div e dopo quel qualcosa sarà l'indice del ciclo
-//         quadrato.innerText = qualcosa
-
+//         //se il quadrato contiene la lista white allora quando lo riclicco si toglie anche il numero
+//         if (quadrato.classList.contains("white") ){
+//             quadrato.innerHTML = ""
+//         }
+//         // se invece il quadrato ancora non contiene white allora gli mette sia white che il numero
+//         else{
+//             quadrato.innerText = qualcosa
+//         }
+        
+//         quadrato.classList.toggle("white")
 //     }
 //     )
 //     //la funzione mi ritorna quadrato che poi vado a richimare fuori

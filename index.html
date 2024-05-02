@@ -11,7 +11,17 @@
     <header>
         <h1>GIOCA A CAMPO MINATO SCEGLI LA DIFFICOLTA' E CLICCA SUL BOTTONE</h1>
     </header>
-    <main id="grid">
+    <main>
+        <button id="start">AVVIA IL GIOCO CAMPO MINATO</button>
+        <select name="option" id="difficulty">
+            <option value="">Scegli la Difficolta</option>
+            <option value="easy" id="easy">Easy</option>
+            <option value="medium" id="medium">Medium</option>
+            <option value="hard" id="hard">Hard</option>
+        </select>
+        <div id="grid">
+
+        </div>
         <!-- <div class="square"></div>
         <div class="square"></div>
         <div class="square"></div>
@@ -32,13 +42,6 @@
         <div class="square"></div>
         <div class="square"></div>
         <div class="square"></div> -->
-        <button id="start">AVVIA IL GIOCO CAMPO MINATO</button>
-        <select name="option" id="difficulty">
-            <option value="">Scegli la Difficolta</option>
-            <option value="easy" id="easy">Easy</option>
-            <option value="medium" id="medium">Medium</option>
-            <option value="hard" id="hard">Hard</option>
-        </select>
     </main>
     <script src="./js/main.js"></script>
     <script src="./js/bonus-1.js"></script>
